@@ -20,3 +20,10 @@
 | verbose_name | フォーム自動生成で見出しとして使う       |
 
 [詳細はこちら](https://docs.djangoproject.com/ja/2.1/ref/models/fields/#field-types)
+
+## DB 作成
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
