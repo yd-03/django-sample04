@@ -27,3 +27,15 @@
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+## 管理サイトの設定
+
+```bash
+# 管理者用のIDとPassを設定
+python manage.py createsuperuser
+# 開発サーバーを起動
+python manage.py runserver
+```
+
+管理者ログイン画面
+http://localhost:8000/admin/
