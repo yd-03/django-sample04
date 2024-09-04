@@ -24,9 +24,15 @@
 ## DB 作成
 
 ```bash
+# migrationファイルを作る
 python manage.py makemigrations
+# migrationファイルをもとにDBに反映する
 python manage.py migrate
 ```
+
+- manage.py と同じ階層に db.sqlite3 というデータベースのファイルが作られ、モデルに応じたテーブルも自動で作成される
+- SQL を一切書かずにデータベースを用意出来てしまう
+- 本番用に MySQL や Postgres に差し替える時も settings だけを変えるだけで対応可能
 
 ## 管理サイトの設定
 
