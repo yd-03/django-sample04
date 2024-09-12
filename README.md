@@ -7,6 +7,12 @@
 | django-crispy-forms | 入力フォームの HTML を Bootstrap に対応させる |
 | django-filter       | 検索機能を追加する                            |
 
+インストール方法
+
+```bash
+pip install django-crispy-forms django-filter
+```
+
 ## モデルフィールド一覧
 
 | オプション   | 説明                                     |
@@ -33,6 +39,11 @@ python manage.py migrate
 - manage.py と同じ階層に db.sqlite3 というデータベースのファイルが作られ、モデルに応じたテーブルも自動で作成される
 - SQL を一切書かずにデータベースを用意出来てしまう
 - 本番用に MySQL や Postgres に差し替える時も settings だけを変えるだけで対応可能
+
+makemigrations と migrate の違い
+
+- makemigrations: モデルの変更を検出し、マイグレーションファイルを作成する
+- migrate: 作成されたマイグレーションファイルを適用し、データベースに変更を反映する
 
 ## 管理サイトの設定
 
